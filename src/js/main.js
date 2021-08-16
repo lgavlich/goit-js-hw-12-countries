@@ -16,7 +16,7 @@ refs.input.addEventListener('input',debounce(onInputCountry, 500));
 
 function onInputCountry(e) {
     cleanInput();
-    //let countryName = e.terget.value;
+    let countryName = e.target.value;
     const countryNameTrim = countryName.trim();
     if (countryNameTrim) {
         ApiCountries.fetchCountries(countryNameTrim)
