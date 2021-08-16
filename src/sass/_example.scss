@@ -8,7 +8,18 @@ body {
 }
 
 .input-control {
-  padding: auto;
+  padding: 20px;
   border-radius: 5px;
+}
+
+.country-container {
+  margin-top: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.main-container {
+  display: flex;
+  align-items: center;
 }
 
