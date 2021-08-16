@@ -19,7 +19,8 @@ function onInputCountry(e) {
     //let countryName = e.terget.value;
     const countryNameTrim = countryName.trim();
     if (countryNameTrim) {
-      ApiCountries.fetchCountries(countryNameTrim).then(country => {
+        ApiCountries.fetchCountries(countryNameTrim)
+            .then(country => {
         if (country.length < 2) {
           cleanInput();
           renderCountry(country);
@@ -31,9 +32,9 @@ function onInputCountry(e) {
           cleanInput();
           manyMatchesFound();
         } else {
-          onerror();
+          onError();
         }
-      });
+      })
     }
 }
 
