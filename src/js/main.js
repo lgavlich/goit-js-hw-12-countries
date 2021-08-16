@@ -16,25 +16,24 @@ refs.input.addEventListener('input',debounce(onInputCountry, 500));
 
 function onInputCountry(e) {
     cleanInput();
-    let nameCountry = e.terget.value;
-    const nameCountryTrim = nameCountry.trim();
-    if (nameCountryTrim) {
-        ApiCountries.fetchCountries(nameCountryTrim)
-            .then(country => {
-                if (country.length < 2) {
-                    cleanInput()
-                        renderCountry(country);
-                    refs.input.value = '';
-                } else if (country.length > 1 && country.length <= 10) {
-                    cleanInput.input();
-                    renderCountries(country);
-                } else if (country.length > 10) {
-                    cleanInput();
-                    manyMatchesFound();
-                } else {
-                    onerror();
-                }
-            })
+    //let countryName = e.terget.value;
+    const countryNameTrim = countryName.trim();
+    if (countryNameTrim) {
+      ApiCountries.fetchCountries(countryNameTrim).then(country => {
+        if (country.length < 2) {
+          cleanInput();
+          renderCountry(country);
+          refs.input.value = '';
+        } else if (country.length > 1 && country.length <= 10) {
+          cleanInput.input();
+          renderCountries(country);
+        } else if (country.length > 10) {
+          cleanInput();
+          manyMatchesFound();
+        } else {
+          onerror();
+        }
+      });
     }
 }
 
