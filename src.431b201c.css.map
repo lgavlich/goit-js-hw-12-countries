@@ -1,1 +1,0 @@
-{"version":3,"sources":["sass/_example.scss"],"names":[],"mappings":"AAAA,KACE,wCAGF,WACE,eAAA,CACA,iBAGF,eACE,YAAA,CACA","file":"src.431b201c.css","sourceRoot":"../src","sourcesContent":["body {\n  background-color:rgba(184, 114, 114, 0.884);\n}\n\n.container{\n  margin-top: 40px;\n  margin-left: 30px;\n}\n\n.input-control {\n  padding: auto;\n  border-radius: 5px;\n}\n\n"]}
