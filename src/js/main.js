@@ -1,8 +1,8 @@
 import { error } from '@pnotify/core';
 import '@pnotify/core/dist/BrightTheme.css';
 import ApiCountries from "./fetchCountries.js";
-import countryTmpl from './templates/country-card.hbs';
-import countriesTmpl from './templates/country-list.hbs';
+import countryTmpl from './templates/country.hbs';
+import countriesTmpl from './templates/countries-list.hbs';
     
 
 const debounce = require('lodash.debounce');
