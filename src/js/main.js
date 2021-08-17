@@ -26,7 +26,7 @@ function onInputCountry(e) {
           renderCountry(country);
           refs.input.value = '';
         } else if (country.length > 1 && country.length <= 10) {
-          cleanInput.input();
+          cleanInput();
           renderCountries(country);
         } else if (country.length > 10) {
           cleanInput();
